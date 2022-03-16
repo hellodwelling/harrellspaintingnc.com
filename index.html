@@ -1,23 +1,28 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Harrell&#x27;s Painting</title>
+        <title>Painting in Kinston, NC | Harrell&#x27;s Painting |  Home</title>
+        <meta name="description" content="Harrell&#x27;s Painting is Kinston&#x27;s most trusted Painting service. We are a customer-first company and you are always a priority.">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
         <!-- <link rel="stylesheet" type="stylesheet" href="/staticfiles/landing_page_gen/tailwind.css"> -->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"> -->
+        <link rel="icon" href="https://landing-page-app-hero-images.s3.amazonaws.com/media/7d63ba5c-b457-4f3d-8943-da4cfec8e829.jpeg" type="image/x-icon">
         <link rel="stylesheet" href="https://prophone-templates.vercel.app/assets/output.css">
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -33,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -57,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -91,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -218,7 +222,6 @@
                         <!-- Logo Link -->
                         <a
                             href="/"
-
                             class="flex items-center justify-center flex-shrink-0 pr-5 bg-white rounded-md  focus:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2"
                         >
                             <img
@@ -927,7 +930,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg"
-                alt="-image"
+                loading="lazy"
+                alt="Painting company Harrell&#x27;s Painting in Kinston, NC"
             />
         </div>
         
@@ -944,7 +948,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg"
-                alt="-image"
+                loading="lazy"
+                alt="Painting company Harrell&#x27;s Painting in Kinston, NC"
             />
         </div>
         
@@ -961,7 +966,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg"
-                alt="-image"
+                loading="lazy"
+                alt="Painting company Harrell&#x27;s Painting in Kinston, NC"
             />
         </div>
         
@@ -978,7 +984,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg"
-                alt="-image"
+                loading="lazy"
+                alt="Painting company Harrell&#x27;s Painting in Kinston, NC"
             />
         </div>
         
@@ -995,7 +1002,8 @@
             <img
                 class="object-cover w-full h-72 md:h-96 lg:w-full lg:h-full"
                 src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg"
-                alt="-image"
+                loading="lazy"
+                alt="Painting company Harrell&#x27;s Painting in Kinston, NC"
             />
         </div>
         
@@ -1065,116 +1073,122 @@
 </section>
 
                     <section class="pt-16 bg-white lg:py-24">
-    <div class="pb-16 bg-gray-50 lg:pb-0 lg:z-10 lg:relative">
-        <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-8">
-            <!-- Image -->
-            <div class="relative lg:-my-8">
-                <div aria-hidden="true" class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"></div>
-                <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-                    <div x-cloak class="aspect-h-9 aspect-w-10" x-data="{ shown: false }" x-intersect.half="shown = true">
-                        <div
-                            class="h-full rounded-xl bg-gray-50"
-                            x-show="shown"
-                            x-transition:enter="transition duration-1000"
-                            x-transition:enter-start="transform -translate-x-full opacity-0"
-                            x-transition:enter-end="transform translate-x-0 opacity-100"
-                        >
-                            <div
-                                class="overflow-hidden shadow-xl h-full rounded-xl flex items-center justify-center"
+  <div class="pb-16 bg-gray-50 lg:pb-0 lg:z-10 lg:relative">
+      <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-8">
+          <!-- Image -->
+          <div class="relative lg:-my-8">
+              <div aria-hidden="true" class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"></div>
+              <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
+                  <div x-cloak class="aspect-h-9 aspect-w-10" x-data="{ shown: false }" x-intersect.half="shown = true">
+                      <div
+                          class="h-full rounded-xl bg-gray-50"
+                          x-show="shown"
+                          x-transition:enter="transition duration-1000"
+                          x-transition:enter-start="transform -translate-x-full opacity-0"
+                          x-transition:enter-end="transform translate-x-0 opacity-100"
+                      >
+                          <div
+                              class="overflow-hidden shadow-xl h-full rounded-xl flex items-center justify-center"
+                              
+                          >
+                              
+                                  
+                                      <img 
+                                        src="https://landing-page-app-hero-images.s3.amazonaws.com/media/d77074fb-3144-42a4-8b9d-50c1730ad86d.jpeg"
+                                        alt="Harrell&#x27;s Painting team in Kinston, NC - people or person"
+                                        class="w-auto h-auto max-h-full max-w-full"
+                                        loading="lazy"
+                                      >
+                                  
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Content -->
+          <div class="mt-12 lg:m-0 lg:pl-1">
+              <div class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:pt-20 lg:pb-11 lg:max-w-none">
+                  <!-- Text Part -->
+                  <div class="text-primary">
+                      <h2 class="text-3xl font-extrabold lg:text-4xl">About Us</h2>
+                      <p class="mt-6 text-xl">
+                          Harrell&#x27;s Painting is Kinston&#x27;s most trusted Painting service. We are a customer-first company and you are always a priority. Our team is professional, trained, and ready to take care of all your Painting needs. We can handle small or big jobs, interior, exterior, cabinet refinishing, tub refinishing, and more! Reach out today for a free quote.
+                          <!-- Caro’s Landscaping and Lawn has been Austin's most trusted service for the past 15 years. We are a customer-first company and you
+                          are always a priority. Our team is professional, trained, and ready to take care of all your lawn care needs. -->
+                      </p>
+                  </div>
+                  <!-- Text with Social Icons -->
+                  <footer class="mt-6">
+                      <span class="text-xl font-semibold text-primary">Connect with us</span>
+                      <!-- Icons -->
+                      <ul class="flex -mx-2.5 mt-0.5">
+                          
+                          <li class="m-2.5">
+                              <a
+                                target="_blank" rel="noopener noreferrer"   
+                                  class="inline-flex items-center justify-center p-1 rounded-full  group focus:outline-none focus:ring-2 ring-white ring-offset-2 ring-offset-primary"
+                                  href="https://facebook.com/harrellspainting"
+                              >
+                                  <!-- Screen Reader Fallback -->
+                                  <span class="sr-only">Facebook</span>
+                                 
+                                      <svg
+                                      aria-hidden="true"
+                                      class="text-primary transition-transform w-7 h-7 lg:w-9 lg:h-9 group-hover:-translate-y-1.5"
+                                      viewBox="0 0 36 36"
+                                      fill="currentColor"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      preserveAspectRatio="none"
+                                  >
+                                          <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M36 18C36 8.0586 27.9414 0 18 0C8.0586 0 0 8.0586 0 18C0 26.9838 6.5826 34.4304 15.1884 35.7804V23.2038H10.6164V18H15.1884V14.0346C15.1884 9.5238 17.874 7.0326 21.987 7.0326C23.9562 7.0326 26.0154 7.3836 26.0154 7.3836V11.8116H23.7474C21.51 11.8116 20.8134 13.1994 20.8134 14.6232V18H25.8048L25.0074 23.202H20.8134V35.7804C29.4174 34.4304 36 26.9838 36 18Z" fill="#9CA3AF"/>
+                                          </svg>
+                                          
+                              </a>
+                          </li>
+                          
+                          
+                          <!-- Icon Instagram -->
+                          <li class="m-2.5">
+                              <a
+                                  class="inline-flex items-center justify-center p-1 rounded-full  group focus:outline-none focus:ring-2 ring-white ring-offset-2 ring-offset-primary"
+                                   target="_blank" rel="noopener noreferrer"
+                                  href="https://www.instagram.com/harrellspainting/"
+                              >
+                                  <span class="sr-only">Instagram</span>
+                                  
+                                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                  class="text-primary transition-transform w-7 h-7 lg:w-9 lg:h-9 group-hover:-translate-y-1.5"
+                                  >
+                                      <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M18.567 0C22.941 0 23.5782 0.0233999 25.4214 0.108C27.3366 0.1962 28.6452 0.5004 29.79 0.945C30.9915 1.39657 32.08 2.10484 32.9796 3.0204C33.8952 3.91999 34.6034 5.0085 35.055 6.21C35.4996 7.3548 35.8038 8.6634 35.892 10.5786C35.9784 12.4992 36 13.1112 36 18V18.144C36 22.9014 35.9784 23.5206 35.892 25.4214C35.8038 27.3366 35.4996 28.6452 35.055 29.79C34.6034 30.9915 33.8952 32.08 32.9796 32.9796C32.08 33.8952 30.9915 34.6034 29.79 35.055C28.6452 35.4996 27.3366 35.8038 25.4214 35.892C23.5008 35.9784 22.8888 36 18 36H17.856C13.0986 36 12.4794 35.9784 10.5786 35.892C8.6634 35.8038 7.3548 35.4996 6.21 35.055C5.0085 34.6034 3.91999 33.8952 3.0204 32.9796C2.10484 32.08 1.39657 30.9915 0.945 29.79C0.5004 28.6452 0.1962 27.3366 0.108 25.4214C0.0233999 23.5782 0 22.9392 0 18.567V17.433C0 13.059 0.0233999 12.4218 0.108 10.5786C0.1962 8.6634 0.5004 7.3548 0.945 6.21C1.39657 5.0085 2.10484 3.91999 3.0204 3.0204C3.91999 2.10484 5.0085 1.39657 6.21 0.945C7.3548 0.5004 8.6634 0.1962 10.5786 0.108C12.4218 0.0233999 13.0608 0 17.433 0H18.567ZM18.4212 3.2436H17.5788C13.158 3.2436 12.5676 3.2634 10.7262 3.348C8.9712 3.429 8.019 3.7206 7.3836 3.9672C6.543 4.2948 5.9436 4.6836 5.3136 5.3136C4.6836 5.9436 4.2948 6.543 3.9672 7.3836C3.7206 8.019 3.4272 8.9712 3.348 10.7262C3.2634 12.5676 3.2436 13.158 3.2436 17.5788V18.4212C3.2436 22.842 3.2634 23.4324 3.348 25.2738C3.429 27.0288 3.7206 27.981 3.9672 28.6164C4.2948 29.4552 4.6854 30.0564 5.3136 30.6864C5.9436 31.3164 6.543 31.7052 7.3836 32.0328C8.019 32.2794 8.9712 32.5728 10.7262 32.652C12.6234 32.7384 13.1922 32.7564 18 32.7564H18.144C22.8186 32.7564 23.3946 32.7384 25.272 32.652C27.0288 32.571 27.981 32.2794 28.6164 32.0328C29.4552 31.7052 30.0564 31.3164 30.6864 30.6864C31.3164 30.0564 31.7052 29.457 32.0328 28.6164C32.2794 27.981 32.5728 27.0288 32.652 25.2738C32.7384 23.3748 32.7564 22.8078 32.7564 18V17.856C32.7564 13.1814 32.7384 12.6054 32.652 10.728C32.571 8.9712 32.2794 8.019 32.0328 7.3836C31.7444 6.60163 31.2843 5.89427 30.6864 5.3136C30.1057 4.71575 29.3983 4.25567 28.6164 3.9672C27.981 3.7206 27.0288 3.4272 25.2738 3.348C23.4324 3.2634 22.842 3.2436 18.4212 3.2436ZM18 8.757C19.2138 8.757 20.4157 8.99608 21.5371 9.46058C22.6586 9.92509 23.6775 10.6059 24.5358 11.4642C25.3941 12.3225 26.0749 13.3414 26.5394 14.4629C27.0039 15.5843 27.243 16.7862 27.243 18C27.243 19.2138 27.0039 20.4157 26.5394 21.5371C26.0749 22.6586 25.3941 23.6775 24.5358 24.5358C23.6775 25.3941 22.6586 26.0749 21.5371 26.5394C20.4157 27.0039 19.2138 27.243 18 27.243C15.5486 27.243 13.1976 26.2692 11.4642 24.5358C9.73081 22.8024 8.757 20.4514 8.757 18C8.757 15.5486 9.73081 13.1976 11.4642 11.4642C13.1976 9.73081 15.5486 8.757 18 8.757ZM18 12.0006C16.4089 12.0006 14.8829 12.6327 13.7578 13.7578C12.6327 14.8829 12.0006 16.4089 12.0006 18C12.0006 19.5911 12.6327 21.1171 13.7578 22.2422C14.8829 23.3673 16.4089 23.9994 18 23.9994C19.5911 23.9994 21.1171 23.3673 22.2422 22.2422C23.3673 21.1171 23.9994 19.5911 23.9994 18C23.9994 16.4089 23.3673 14.8829 22.2422 13.7578C21.1171 12.6327 19.5911 12.0006 18 12.0006ZM27.6084 6.2316C28.1813 6.2316 28.7307 6.45917 29.1357 6.86425C29.5408 7.26933 29.7684 7.81873 29.7684 8.3916C29.7684 8.96447 29.5408 9.51387 29.1357 9.91895C28.7307 10.324 28.1813 10.5516 27.6084 10.5516C27.0355 10.5516 26.4861 10.324 26.081 9.91895C25.676 9.51387 25.4484 8.96447 25.4484 8.3916C25.4484 7.81873 25.676 7.26933 26.081 6.86425C26.4861 6.45917 27.0355 6.2316 27.6084 6.2316Z" fill="#9CA3AF"/>
+                                      </svg>
+                                      
+                                      
+                              </a>
+                          </li>
+                          
+                          
+                          
+                          
+                          
 
-                            >
-                                
-                                    
-                                        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/d77074fb-3144-42a4-8b9d-50c1730ad86d.jpeg"   alt="About Us Image"  
-                                        class="w-auto h-auto max-h-full max-w-full">
-                                    
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Content -->
-            <div class="mt-12 lg:m-0 lg:pl-1">
-                <div class="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:pt-20 lg:pb-11 lg:max-w-none">
-                    <!-- Text Part -->
-                    <div class="text-primary">
-                        <h2 class="text-3xl font-extrabold lg:text-4xl">About Us</h2>
-                        <p class="mt-6 text-xl">
-                            Harrell&#x27;s Painting is Kinston&#x27;s most trusted Painting service. We are a customer-first company and you are always a priority. Our team is professional, trained, and ready to take care of all your Painting needs. We can handle small or big jobs, interior, exterior, cabinet refinishing, tub refinishing, and more! Reach out today for a free quote.
-                            <!-- Caro’s Landscaping and Lawn has been Austin's most trusted service for the past 15 years. We are a customer-first company and you
-                            are always a priority. Our team is professional, trained, and ready to take care of all your lawn care needs. -->
-                        </p>
-                    </div>
-                    <!-- Text with Social Icons -->
-                    <footer class="mt-6">
-                        <span class="text-xl font-semibold text-primary">Connect with us</span>
-                        <!-- Icons -->
-                        <ul class="flex -mx-2.5 mt-0.5">
-                            
-                            <li class="m-2.5">
-                                <a
-                                    class="inline-flex items-center justify-center p-1 rounded-full  group focus:outline-none focus:ring-2 ring-white ring-offset-2 ring-offset-primary"
-                                    href="//https://facebook.com/harrellspainting"
-                                >
-                                    <!-- Screen Reader Fallback -->
-                                    <span class="sr-only">Facebook</span>
-                                   
-                                        <svg
-                                        aria-hidden="true"
-                                        class="text-primary transition-transform w-7 h-7 lg:w-9 lg:h-9 group-hover:-translate-y-1.5"
-                                        viewBox="0 0 36 36"
-                                        fill="currentColor"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        preserveAspectRatio="none"
-                                    >
-                                            <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M36 18C36 8.0586 27.9414 0 18 0C8.0586 0 0 8.0586 0 18C0 26.9838 6.5826 34.4304 15.1884 35.7804V23.2038H10.6164V18H15.1884V14.0346C15.1884 9.5238 17.874 7.0326 21.987 7.0326C23.9562 7.0326 26.0154 7.3836 26.0154 7.3836V11.8116H23.7474C21.51 11.8116 20.8134 13.1994 20.8134 14.6232V18H25.8048L25.0074 23.202H20.8134V35.7804C29.4174 34.4304 36 26.9838 36 18Z" fill="#9CA3AF"/>
-                                            </svg>
-                                            
-                                </a>
-                            </li>
-                            
-                            
-                            <!-- Icon Instagram -->
-                            <li class="m-2.5">
-                                <a
-                                    class="inline-flex items-center justify-center p-1 rounded-full  group focus:outline-none focus:ring-2 ring-white ring-offset-2 ring-offset-primary"
-                                    href="//https://www.instagram.com/harrellspainting/"
-                                >
-                                    <span class="sr-only">Instagram</span>
-                                    
-                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    class="text-primary transition-transform w-7 h-7 lg:w-9 lg:h-9 group-hover:-translate-y-1.5"
-                                    >
-                                        <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M18.567 0C22.941 0 23.5782 0.0233999 25.4214 0.108C27.3366 0.1962 28.6452 0.5004 29.79 0.945C30.9915 1.39657 32.08 2.10484 32.9796 3.0204C33.8952 3.91999 34.6034 5.0085 35.055 6.21C35.4996 7.3548 35.8038 8.6634 35.892 10.5786C35.9784 12.4992 36 13.1112 36 18V18.144C36 22.9014 35.9784 23.5206 35.892 25.4214C35.8038 27.3366 35.4996 28.6452 35.055 29.79C34.6034 30.9915 33.8952 32.08 32.9796 32.9796C32.08 33.8952 30.9915 34.6034 29.79 35.055C28.6452 35.4996 27.3366 35.8038 25.4214 35.892C23.5008 35.9784 22.8888 36 18 36H17.856C13.0986 36 12.4794 35.9784 10.5786 35.892C8.6634 35.8038 7.3548 35.4996 6.21 35.055C5.0085 34.6034 3.91999 33.8952 3.0204 32.9796C2.10484 32.08 1.39657 30.9915 0.945 29.79C0.5004 28.6452 0.1962 27.3366 0.108 25.4214C0.0233999 23.5782 0 22.9392 0 18.567V17.433C0 13.059 0.0233999 12.4218 0.108 10.5786C0.1962 8.6634 0.5004 7.3548 0.945 6.21C1.39657 5.0085 2.10484 3.91999 3.0204 3.0204C3.91999 2.10484 5.0085 1.39657 6.21 0.945C7.3548 0.5004 8.6634 0.1962 10.5786 0.108C12.4218 0.0233999 13.0608 0 17.433 0H18.567ZM18.4212 3.2436H17.5788C13.158 3.2436 12.5676 3.2634 10.7262 3.348C8.9712 3.429 8.019 3.7206 7.3836 3.9672C6.543 4.2948 5.9436 4.6836 5.3136 5.3136C4.6836 5.9436 4.2948 6.543 3.9672 7.3836C3.7206 8.019 3.4272 8.9712 3.348 10.7262C3.2634 12.5676 3.2436 13.158 3.2436 17.5788V18.4212C3.2436 22.842 3.2634 23.4324 3.348 25.2738C3.429 27.0288 3.7206 27.981 3.9672 28.6164C4.2948 29.4552 4.6854 30.0564 5.3136 30.6864C5.9436 31.3164 6.543 31.7052 7.3836 32.0328C8.019 32.2794 8.9712 32.5728 10.7262 32.652C12.6234 32.7384 13.1922 32.7564 18 32.7564H18.144C22.8186 32.7564 23.3946 32.7384 25.272 32.652C27.0288 32.571 27.981 32.2794 28.6164 32.0328C29.4552 31.7052 30.0564 31.3164 30.6864 30.6864C31.3164 30.0564 31.7052 29.457 32.0328 28.6164C32.2794 27.981 32.5728 27.0288 32.652 25.2738C32.7384 23.3748 32.7564 22.8078 32.7564 18V17.856C32.7564 13.1814 32.7384 12.6054 32.652 10.728C32.571 8.9712 32.2794 8.019 32.0328 7.3836C31.7444 6.60163 31.2843 5.89427 30.6864 5.3136C30.1057 4.71575 29.3983 4.25567 28.6164 3.9672C27.981 3.7206 27.0288 3.4272 25.2738 3.348C23.4324 3.2634 22.842 3.2436 18.4212 3.2436ZM18 8.757C19.2138 8.757 20.4157 8.99608 21.5371 9.46058C22.6586 9.92509 23.6775 10.6059 24.5358 11.4642C25.3941 12.3225 26.0749 13.3414 26.5394 14.4629C27.0039 15.5843 27.243 16.7862 27.243 18C27.243 19.2138 27.0039 20.4157 26.5394 21.5371C26.0749 22.6586 25.3941 23.6775 24.5358 24.5358C23.6775 25.3941 22.6586 26.0749 21.5371 26.5394C20.4157 27.0039 19.2138 27.243 18 27.243C15.5486 27.243 13.1976 26.2692 11.4642 24.5358C9.73081 22.8024 8.757 20.4514 8.757 18C8.757 15.5486 9.73081 13.1976 11.4642 11.4642C13.1976 9.73081 15.5486 8.757 18 8.757ZM18 12.0006C16.4089 12.0006 14.8829 12.6327 13.7578 13.7578C12.6327 14.8829 12.0006 16.4089 12.0006 18C12.0006 19.5911 12.6327 21.1171 13.7578 22.2422C14.8829 23.3673 16.4089 23.9994 18 23.9994C19.5911 23.9994 21.1171 23.3673 22.2422 22.2422C23.3673 21.1171 23.9994 19.5911 23.9994 18C23.9994 16.4089 23.3673 14.8829 22.2422 13.7578C21.1171 12.6327 19.5911 12.0006 18 12.0006ZM27.6084 6.2316C28.1813 6.2316 28.7307 6.45917 29.1357 6.86425C29.5408 7.26933 29.7684 7.81873 29.7684 8.3916C29.7684 8.96447 29.5408 9.51387 29.1357 9.91895C28.7307 10.324 28.1813 10.5516 27.6084 10.5516C27.0355 10.5516 26.4861 10.324 26.081 9.91895C25.676 9.51387 25.4484 8.96447 25.4484 8.3916C25.4484 7.81873 25.676 7.26933 26.081 6.86425C26.4861 6.45917 27.0355 6.2316 27.6084 6.2316Z" fill="#9CA3AF"/>
-                                        </svg>
-                                        
-                                        
-                                </a>
-                            </li>
-                            
-                            
-                            
-                            
-                            
-  
-                        </ul>
-                        <ul class="flex -mx-2.5 mt-0.5">
-                                <!-- Icon Facebook -->
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                        </ul>
-                    </footer>
-                </div>
-            </div>
-        </div>
-    </div>
+                      </ul>
+                      <ul class="flex -mx-2.5 mt-0.5">
+                              <!-- Icon Facebook -->
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                      </ul>
+                  </footer>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 
                     <!-- Logo Grid Component -->
@@ -1293,7 +1307,7 @@
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1348,7 +1362,7 @@
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1403,7 +1417,7 @@
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1458,7 +1472,7 @@
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1513,7 +1527,7 @@
                             <!-- Image -->
                             <img
                                 class="object-cover grayscale"
-                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80"
                                 alt=""
                             />
                         </a>
@@ -1541,7 +1555,7 @@
 
     if(screenWidth < 600) {
         for (let i = 0; i < services.length; i++) {
-            if(i < 3) services[i].setAttribute('x-show', "true")
+            if(i < 8) services[i].setAttribute('x-show', "true")
             else services[i].setAttribute('x-show', "showMore")
         }
     } else {
@@ -1761,7 +1775,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2c9f786d-4e90-409f-970c-77881eb2afe4.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2c9f786d-4e90-409f-970c-77881eb2afe4.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2c9f786d-4e90-409f-970c-77881eb2afe4.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2c9f786d-4e90-409f-970c-77881eb2afe4.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/2c9f786d-4e90-409f-970c-77881eb2afe4.jpeg" alt="" /> -->
                             
@@ -1782,7 +1796,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a273706e-e859-413d-bf34-d3bf24955bd9.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a273706e-e859-413d-bf34-d3bf24955bd9.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a273706e-e859-413d-bf34-d3bf24955bd9.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a273706e-e859-413d-bf34-d3bf24955bd9.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/a273706e-e859-413d-bf34-d3bf24955bd9.jpeg" alt="" /> -->
                             
@@ -1803,7 +1817,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg" alt="" /> -->
                             
@@ -1818,13 +1832,13 @@
             </li>
         
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden sm:block ">
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg" alt="" /> -->
                             
@@ -1839,13 +1853,13 @@
             </li>
         
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden sm:block ">
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/50f121fd-6032-4f3d-bab1-8acc9990a571.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/50f121fd-6032-4f3d-bab1-8acc9990a571.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/50f121fd-6032-4f3d-bab1-8acc9990a571.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/50f121fd-6032-4f3d-bab1-8acc9990a571.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/50f121fd-6032-4f3d-bab1-8acc9990a571.jpeg" alt="" /> -->
                             
@@ -1866,7 +1880,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f1ebb8b-19ce-4c82-841c-a7ed4acd4d9c.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8f1ebb8b-19ce-4c82-841c-a7ed4acd4d9c.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/8f1ebb8b-19ce-4c82-841c-a7ed4acd4d9c.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f1ebb8b-19ce-4c82-841c-a7ed4acd4d9c.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/8f1ebb8b-19ce-4c82-841c-a7ed4acd4d9c.jpeg" alt="" /> -->
                             
@@ -1881,13 +1895,13 @@
             </li>
         
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden sm:block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 6; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4f681e48-1a1a-415b-8571-1d07fea7a1bc.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4f681e48-1a1a-415b-8571-1d07fea7a1bc.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/4f681e48-1a1a-415b-8571-1d07fea7a1bc.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4f681e48-1a1a-415b-8571-1d07fea7a1bc.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/4f681e48-1a1a-415b-8571-1d07fea7a1bc.jpeg" alt="" /> -->
                             
@@ -1902,13 +1916,13 @@
             </li>
         
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden sm:block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 7; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg" alt="" /> -->
                             
@@ -1923,13 +1937,13 @@
             </li>
         
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" hidden ">
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 8; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg" alt="" /> -->
                             
@@ -1950,7 +1964,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5eba6e38-c2b6-446b-bbd3-0e49932229f7.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5eba6e38-c2b6-446b-bbd3-0e49932229f7.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5eba6e38-c2b6-446b-bbd3-0e49932229f7.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5eba6e38-c2b6-446b-bbd3-0e49932229f7.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/5eba6e38-c2b6-446b-bbd3-0e49932229f7.jpeg" alt="" /> -->
                             
@@ -1971,7 +1985,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/56e5ef9a-0d7c-4bd3-8f48-e7657ed7e398.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/56e5ef9a-0d7c-4bd3-8f48-e7657ed7e398.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/56e5ef9a-0d7c-4bd3-8f48-e7657ed7e398.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/56e5ef9a-0d7c-4bd3-8f48-e7657ed7e398.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/56e5ef9a-0d7c-4bd3-8f48-e7657ed7e398.jpeg" alt="" /> -->
                             
@@ -1992,7 +2006,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0da6b516-9527-410f-b3e7-40dec09eab0d.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0da6b516-9527-410f-b3e7-40dec09eab0d.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0da6b516-9527-410f-b3e7-40dec09eab0d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0da6b516-9527-410f-b3e7-40dec09eab0d.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/0da6b516-9527-410f-b3e7-40dec09eab0d.jpeg" alt="" /> -->
                             
@@ -2013,7 +2027,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9874379a-f346-4f0a-a908-870c81d117ee.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9874379a-f346-4f0a-a908-870c81d117ee.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/9874379a-f346-4f0a-a908-870c81d117ee.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9874379a-f346-4f0a-a908-870c81d117ee.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/9874379a-f346-4f0a-a908-870c81d117ee.jpeg" alt="" /> -->
                             
@@ -2034,7 +2048,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg" alt="" /> -->
                             
@@ -2055,7 +2069,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0dcaae35-da91-4c3c-a3b3-c775bbf044ec.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0dcaae35-da91-4c3c-a3b3-c775bbf044ec.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0dcaae35-da91-4c3c-a3b3-c775bbf044ec.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0dcaae35-da91-4c3c-a3b3-c775bbf044ec.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/0dcaae35-da91-4c3c-a3b3-c775bbf044ec.jpeg" alt="" /> -->
                             
@@ -2076,7 +2090,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3449e373-cf7e-46cd-8f26-888c36cc2e8d.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3449e373-cf7e-46cd-8f26-888c36cc2e8d.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/3449e373-cf7e-46cd-8f26-888c36cc2e8d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3449e373-cf7e-46cd-8f26-888c36cc2e8d.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/3449e373-cf7e-46cd-8f26-888c36cc2e8d.jpeg" alt="" /> -->
                             
@@ -2097,7 +2111,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c21ebafb-673e-4ac2-8561-6fe8bfe44c7d.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c21ebafb-673e-4ac2-8561-6fe8bfe44c7d.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c21ebafb-673e-4ac2-8561-6fe8bfe44c7d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c21ebafb-673e-4ac2-8561-6fe8bfe44c7d.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c21ebafb-673e-4ac2-8561-6fe8bfe44c7d.jpeg" alt="" /> -->
                             
@@ -2118,7 +2132,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/426e7906-4fde-4f5d-8d5a-fc57cd481e25.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/426e7906-4fde-4f5d-8d5a-fc57cd481e25.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/426e7906-4fde-4f5d-8d5a-fc57cd481e25.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/426e7906-4fde-4f5d-8d5a-fc57cd481e25.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/426e7906-4fde-4f5d-8d5a-fc57cd481e25.jpeg" alt="" /> -->
                             
@@ -2139,7 +2153,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ea2d01c6-865a-4cb5-a050-03e272398a9d.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ea2d01c6-865a-4cb5-a050-03e272398a9d.jpeg" alt="" />
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/ea2d01c6-865a-4cb5-a050-03e272398a9d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ea2d01c6-865a-4cb5-a050-03e272398a9d.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/ea2d01c6-865a-4cb5-a050-03e272398a9d.jpeg" alt="" /> -->
                             
@@ -2204,7 +2218,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2c9f786d-4e90-409f-970c-77881eb2afe4.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2c9f786d-4e90-409f-970c-77881eb2afe4.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2212,7 +2226,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a273706e-e859-413d-bf34-d3bf24955bd9.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a273706e-e859-413d-bf34-d3bf24955bd9.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2220,7 +2234,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a4050a1b-2191-4353-bb57-6a32b740f14e.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2228,7 +2242,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/925fc052-bbf0-4456-8701-eb41acfc6040.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2236,7 +2250,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/50f121fd-6032-4f3d-bab1-8acc9990a571.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/50f121fd-6032-4f3d-bab1-8acc9990a571.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2244,7 +2258,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f1ebb8b-19ce-4c82-841c-a7ed4acd4d9c.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/8f1ebb8b-19ce-4c82-841c-a7ed4acd4d9c.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2252,7 +2266,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4f681e48-1a1a-415b-8571-1d07fea7a1bc.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/4f681e48-1a1a-415b-8571-1d07fea7a1bc.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2260,7 +2274,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 7">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ae5d3b9e-514c-4d86-94f0-92ec9547df0d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2268,7 +2282,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 8">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ab25d59f-1075-4687-89ac-0b23e6c7f7c5.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2276,7 +2290,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 9">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5eba6e38-c2b6-446b-bbd3-0e49932229f7.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5eba6e38-c2b6-446b-bbd3-0e49932229f7.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2284,7 +2298,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 10">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/56e5ef9a-0d7c-4bd3-8f48-e7657ed7e398.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/56e5ef9a-0d7c-4bd3-8f48-e7657ed7e398.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2292,7 +2306,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 11">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0da6b516-9527-410f-b3e7-40dec09eab0d.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0da6b516-9527-410f-b3e7-40dec09eab0d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2300,7 +2314,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 12">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9874379a-f346-4f0a-a908-870c81d117ee.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/9874379a-f346-4f0a-a908-870c81d117ee.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2308,7 +2322,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 13">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5d3d44fb-ccd4-4088-81a8-46a7284d2569.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2316,7 +2330,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 14">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0dcaae35-da91-4c3c-a3b3-c775bbf044ec.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0dcaae35-da91-4c3c-a3b3-c775bbf044ec.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2324,7 +2338,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 15">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3449e373-cf7e-46cd-8f26-888c36cc2e8d.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/3449e373-cf7e-46cd-8f26-888c36cc2e8d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2332,7 +2346,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 16">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c21ebafb-673e-4ac2-8561-6fe8bfe44c7d.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c21ebafb-673e-4ac2-8561-6fe8bfe44c7d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2340,7 +2354,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 17">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/426e7906-4fde-4f5d-8d5a-fc57cd481e25.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/426e7906-4fde-4f5d-8d5a-fc57cd481e25.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2348,7 +2362,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 18">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ea2d01c6-865a-4cb5-a050-03e272398a9d.jpeg" alt="placeholder image" />
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/ea2d01c6-865a-4cb5-a050-03e272398a9d.jpeg" alt="Kitchen and Cabinet Refinishing for Harrell&#x27;s Painting in Kinston, NC" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2421,7 +2435,7 @@
                     
 
                         <!-- Review Item -->
-                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                        <li class=" block  px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
                             <!-- Star Rating -->
                             <div class="flex">
                                 <div aria-hidden="true" class="space-x-1.5 flex">
@@ -2493,22 +2507,7 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Facebook</span>
-                                        
-                                        <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M30 15c0-8.285-6.715-15-15-15S0 6.715 0 15c0 7.486 5.486 13.692 12.657 14.817v-10.48h-3.81V15h3.81v-3.305c0-3.759 2.238-5.835 5.666-5.835 1.64 0 3.357.293 3.357.293v3.69h-1.89c-1.865 0-2.445 1.156-2.445 2.343V15h4.159l-.665 4.335h-3.494v10.482C24.514 28.692 30 22.487 30 15Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                        <span class="sr-only">None</span>
                                         
                                     
                                     </div>
@@ -2527,7 +2526,7 @@
                     
 
                         <!-- Review Item -->
-                        <li class="px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
+                        <li class=" block  px-6 py-8 rounded-lg shadow md:px-8 xl:pl-16 xl:pr-6 bg-gray-50">
                             <!-- Star Rating -->
                             <div class="flex">
                                 <div aria-hidden="true" class="space-x-1.5 flex">
@@ -2598,20 +2597,8 @@
 
                                     <!-- Social Icon -->
                                     <div class="flex-shrink-0">
-                                        <span class="sr-only">Google</span>
+                                        <span class="sr-only">None</span>
                                         
-                                            <svg
-                                            aria-hidden="true"
-                                            class="text-blue-900 transition-transform w-7 h-7"
-                                            viewBox="0 0 30 30"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20 10.2222C20 9.40001 19.9319 8.80001 19.7846 8.1778H10.2041V11.8889H15.8276C15.7143 12.8111 15.1021 14.2 13.7415 15.1333L13.7224 15.2575L16.7516 17.5573L16.9615 17.5778C18.8889 15.8333 20 13.2667 20 10.2222Z" fill="#3cba54	"/>
-                                            <path d="M10.2041 20C12.9591 20 15.272 19.1111 16.9614 17.5778L13.7414 15.1333C12.8798 15.7222 11.7233 16.1333 10.2041 16.1333C7.50566 16.1333 5.21542 14.3889 4.39902 11.9778L4.27935 11.9877L1.12957 14.3766L1.08838 14.4889C2.76637 17.7555 6.21309 20 10.2041 20Z" fill="#f4c20d"/>
-                                            <path d="M4.39905 11.9778C4.18363 11.3556 4.05897 10.6889 4.05897 10C4.05897 9.3111 4.18363 8.64446 4.38772 8.02225L4.38201 7.88973L1.19276 5.46246L1.08841 5.5111C0.39683 6.86668 0 8.38893 0 10C0 11.6111 0.39683 13.1333 1.08841 14.4889L4.39905 11.9778Z" fill="#db3236"/>
-                                            <path d="M10.2041 3.86664C12.1201 3.86664 13.4126 4.67775 14.1496 5.35557L17.0294 2.6C15.2608 0.988893 12.9591 0 10.2041 0C6.21309 0 2.76637 2.24443 1.08838 5.51107L4.38769 8.02221C5.21542 5.61111 7.50566 3.86664 10.2041 3.86664Z" fill="#4885ed"/>
-                                            </svg>   
-                                            
                                     
                                     </div>
                                 </footer>
@@ -2658,7 +2645,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="38494"
+                                aria-controls="43353"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2678,7 +2665,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="38494">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="43353">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at +1 252-286-9396. Thanks!</p>
                         </dd>
@@ -2691,7 +2678,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="38495"
+                                aria-controls="43354"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -2711,7 +2698,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="38495">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="43354">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2724,7 +2711,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="38496"
+                                aria-controls="43355"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -2744,7 +2731,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="38496">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="43355">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -2813,7 +2800,7 @@
                 <!-- Your map here -->
                 <div class="w-full h-full bg-gray-400">
                     <div style="height:500px; width:100%;" id="map"></div>
-                    <script >
+                    <script defer>
                         async function coordinate(url) {
                             const res = await fetch(url)
                             const coordinates = await res.json()
@@ -2838,8 +2825,7 @@
                         let state = document.querySelector('#state').innerText
                         console.log('radius - city ' , city)
                         console.log('radius - radius ' , state)
-                        let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${city}+${state}&key=AIzaSyDqq7K5Aj5_4wzi7NGzphVphTEJOZcE9dA`
-                        // let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${cities[0].replace(" ", "+")}+${state[0]}&key=AIzaSyDqq7K5Aj5_4wzi7NGzphVphTEJOZcE9dA`
+                        let url = `https://maps.googleapis.com/maps/api/geocode/json?address=${city}+${state}&key=AIzaSyDuL9weltDy_kOcISLRucx5-JSFsezZpVE`
                 
                         let coordinates = await coordinate(url)  
                 
@@ -2872,6 +2858,7 @@
                     </script>
                     <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSw3qRocbSgfTrtxZbCsTjSHZaaJuUXF4&callback=initMap&libraries=&v=weekly"
+                    defer
                     async
                   ></script> 
               
@@ -2935,313 +2922,270 @@
 <footer class="bg-primary" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:pt-16 lg:pb-10 lg:px-8">
-    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-      <!-- Image, description and logos -->
-      <div class="space-y-8 xl:col-span-1">
-        
-        <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7d63ba5c-b457-4f3d-8943-da4cfec8e829.jpeg" alt="" />
-        
-        <p class="text-base text-gray-100">
-          Harrell&#x27;s Painting<br />
-           Kinston,
-          NC <br />
-           +1 252-286-9396
-          <!-- Is this supposed to be here and correct?  -->
-          <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
-        </p>
-        <div class="flex space-x-6">
-          <!-- are these conditional? and linked to corret links? -->
-          
-          <a
-            href="//https://facebook.com/harrellspainting"
-            class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75"
-          >
-            <span class="sr-only">Facebook</span>
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-           
-          <a
-            href="//https://www.instagram.com/harrellspainting/"
-            class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75"
-          >
-            <span class="sr-only">Instagram</span>
-            <svg
-              class="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </a>
-           
-          <!-- <a href="" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
-                        <span class="sr-only">GitHub</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                fill-rule="evenodd"
-                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
-                    </a> -->
-                    
-        </div>
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <!-- Image, description and logos -->
+          <div class="space-y-8 xl:col-span-1">
+              
+              <img class="h-[80px]" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/7d63ba5c-b457-4f3d-8943-da4cfec8e829.jpeg" alt="" />
+              
+              <p class="text-base text-gray-100">
+                  Harrell&#x27;s Painting<br/>
+                   
+                      Kinston, NC <br/>
+                  
+                  +1 252-286-9396
+                  <!-- Is this supposed to be here and correct?  -->
+                  <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
+              </p>
+              <div class="flex space-x-6">
+                  <!-- are these conditional? and linked to corret links? -->
+                  
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/harrellspainting" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                      <span class="sr-only">Facebook</span>
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path
+                              fill-rule="evenodd"
+                              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                              clip-rule="evenodd"
+                          />
+                      </svg>
+                  </a>
+                  
+                  
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/harrellspainting/" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                      <span class="sr-only">Instagram</span>
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path
+                              fill-rule="evenodd"
+                              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                              clip-rule="evenodd"
+                          />
+                      </svg>
+                  </a>
+                  
+                  
+                  <!-- <a href="" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                      <span class="sr-only">GitHub</span>
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path
+                              fill-rule="evenodd"
+                              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                              clip-rule="evenodd"
+                          />
+                      </svg>
+                  </a> -->
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+              </div>
+          </div>
+          <!-- Links -->
+          <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
+              <!-- First two footer items -->
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                  <!-- Company Links -->
+                  <div>
+                      <h3 class="text-sm font-semibold tracking-wider text-gray-100 uppercase">Company</h3>
+                      <ul role="list" class="mt-4 -mx-1 space-y-4">
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Home</a
+                              >
+                          </li>
+                          
+                              
+                              <li>
+                                  <a
+                                      href="#gallery"
+                                      class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                      >Gallery</a
+                                  >
+                              </li>
+                              
+                          
+                          
+                          <li>
+                              <a
+                                  href="reviews"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Reviews</a
+                              >
+                          </li>
+                          
+                          
+                          
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
+                      </ul>
+                  </div>
+                  <!-- Services Links -->
+                  <div class="mt-12 md:mt-0">
+                      <h3 class="text-sm font-semibold tracking-wider text-gray-100 uppercase">Services</h3>
+                      <ul role="list" class="mt-4 -mx-1 space-y-4">
+                          
+                          <li>
+                              <a
+                                  href="service-Kitchen-and-Cabinet-Refinishing"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Kitchen and Cabinet Refinishing</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="service-Interior-Painting"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Interior Painting</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="service-Exterior-Painting"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Exterior Painting</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="service-Drywall-and-Plastering"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Drywall and Plastering</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="service-Other-Services"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Other Services</a
+                              >
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+              <!-- Second two footer items -->
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                  <!-- Locations Links -->
+                  <div>
+                      <h3 class="text-sm font-semibold tracking-wider text-gray-100 uppercase">Service Areas</h3>
+                      <ul role="list" class="mt-4 -mx-1 space-y-4">
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Kinston, NC</a
+                              >
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  <!-- Hours Links -->
+                  <div class="mt-12 md:mt-0">
+                      <h3 class="text-sm font-semibold tracking-wider text-gray-100 uppercase">Hours</h3>
+                      <ul role="list" class="mt-4 -mx-1 space-y-4">
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
+                                  >Sun: 9:00am - 5:00am</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
+                                  >Mon: 9:00am - 5:00pm</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
+                                  >Tues: 9:00am - 5:00am</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
+                                  >Wed: 9:00am - 5:00pm</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
+                                  >Thu: 9:00am - 5:00pm</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
+                                  >Fri: 9:00am - 5:00pm</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
+                                  >Sat: 9:00am - 5:00pm</a
+                              >
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </div>
       </div>
-      <!-- Links -->
-      <div class="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
-        <!-- First two footer items -->
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <!-- Company Links -->
-          <div>
-            <h3
-              class="text-sm font-semibold tracking-wider text-gray-100 uppercase"
-            >
-              Company
-            </h3>
-            <ul role="list" class="mt-4 -mx-1 space-y-4">
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Home</a
-                >
-              </li>
-               
-              <li>
-                <a
-                  href="#gallery"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Gallery</a
-                >
-              </li>
-                
-              <li>
-                <a
-                  href="reviews"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Reviews</a
-                >
-              </li>
-                
-            </ul>
-          </div>
-          <!-- Services Links -->
-          <div class="mt-12 md:mt-0">
-            <h3
-              class="text-sm font-semibold tracking-wider text-gray-100 uppercase"
-            >
-              Services
-            </h3>
-            <ul role="list" class="mt-4 -mx-1 space-y-4">
-              
-              <li>
-                <a
-                  href="service-Kitchen-and-Cabinet-Refinishing"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Kitchen and Cabinet Refinishing</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="service-Interior-Painting"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Interior Painting</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="service-Exterior-Painting"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Exterior Painting</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="service-Drywall-and-Plastering"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Drywall and Plastering</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="service-Other-Services"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Other Services</a
-                >
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-        <!-- Second two footer items -->
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <!-- Locations Links -->
-          <div>
-            <h3
-              class="text-sm font-semibold tracking-wider text-gray-100 uppercase"
-            >
-              Service Areas
-            </h3>
-            <ul role="list" class="mt-4 -mx-1 space-y-4">
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                  >Kinston, NC</a
-                >
-              </li>
-              
-            </ul>
-          </div>
-          <!-- Hours Links -->
-          <div class="mt-12 md:mt-0">
-            <h3
-              class="text-sm font-semibold tracking-wider text-gray-100 uppercase"
-            >
-              Hours
-            </h3>
-            <ul role="list" class="mt-4 -mx-1 space-y-4">
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                  >Sun: 0:00am -
-                  0:00am</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                  >Mon: 8:00am -
-                  6:00pm</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                  >Tues: 0:00am -
-                  0:00am</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                  >Wed: 8:00am -
-                  6:00pm</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                  >Thu: 8:00am -
-                  6:00pm</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                  >Fri: 8:00am -
-                  6:00pm</a
-                >
-              </li>
-              
-              <li>
-                <a
-                  href="#"
-                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                  >Sat: 8:00am -
-                  6:00pm</a
-                >
-              </li>
-              
-            </ul>
-          </div>
-        </div>
+      <!-- Bottom Part -->
+      <div class="pt-8 mt-12 text-center border-t-2 border-primary-darker">
+          <p class="inline-flex items-center text-base text-gray-100 xl:text-center">
+              Built with ♥ from
+              <a href="https://www.prophone.com" class="inline-block p-1 -m-1 ml-0.5 rounded focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <span class="sr-only">ProPhone</span>
+                  <svg aria-hidden="true" width="95" height="20" viewBox="0 0 95 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2081_3309)">
+                          <path d="M0.166504 4.11491C0.166504 3.88479 0.349686 3.69824 0.575652 3.69824H8.41749C8.70492 3.69824 8.90279 3.99213 8.79912 4.26515L2.9271 19.7339C2.86615 19.8944 2.71452 20.0003 2.54548 20.0003H0.575652C0.349686 20.0003 0.166504 19.8138 0.166504 19.5837V4.11491Z" fill="#F3F4F6"/>
+                          <path d="M15.5607 15.8854C15.5607 16.1155 15.3775 16.3021 15.1515 16.3021H7.3097C7.02227 16.3021 6.8244 16.0082 6.92806 15.7352L12.8001 0.266426C12.861 0.105862 13.0127 0 13.1817 0H15.1515C15.3775 0 15.5607 0.186548 15.5607 0.416667V15.8854Z" fill="#F3F4F6"/>
+                          <path d="M23.2834 15.5732H25.2474V11.7139H27.0118C29.1598 11.7139 30.6941 10.3076 30.6941 8.27637C30.6941 6.24512 29.1598 4.82324 27.0118 4.82324H23.2834V15.5732ZM25.2474 6.44824H26.7356C27.871 6.44824 28.6689 7.18262 28.6689 8.27637C28.6689 9.35449 27.871 10.0889 26.7356 10.0889H25.2474V6.44824ZM32.6332 15.5732H34.5971V10.3545C35.1034 9.69824 35.7938 9.33887 36.4382 9.33887C36.6684 9.33887 36.9139 9.37012 37.1287 9.43262V7.65137C36.9139 7.58887 36.6991 7.57324 36.4843 7.57324C35.8245 7.57324 35.1494 7.91699 34.5971 8.54199V7.76074H32.6332V15.5732ZM38.142 11.667C38.142 14.0576 39.7837 15.7607 42.1005 15.7607C44.4173 15.7607 46.0437 14.0576 46.0437 11.667C46.0437 9.26074 44.4173 7.57324 42.1005 7.57324C39.7837 7.57324 38.142 9.26074 38.142 11.667ZM40.152 11.667C40.152 10.2295 40.9498 9.24512 42.1005 9.24512C43.2359 9.24512 44.0338 10.2295 44.0338 11.667C44.0338 13.1045 43.2359 14.0889 42.1005 14.0889C40.9498 14.0889 40.152 13.1045 40.152 11.667Z" fill="#F3F4F6"/>
+                          <path d="M48.2825 15.5733H50.2464V11.7139H52.0108C54.1588 11.7139 55.6931 10.3076 55.6931 8.27637C55.6931 6.24512 54.1588 4.82324 52.0108 4.82324H48.2825V15.5733ZM50.2464 6.44824H51.7346C52.87 6.44824 53.6678 7.18262 53.6678 8.27637C53.6678 9.3545 52.87 10.0889 51.7346 10.0889H50.2464V6.44824ZM57.632 15.5733H59.5959V10.1514C60.1022 9.6045 60.6699 9.32325 61.2376 9.32325C62.0354 9.32325 62.5878 9.917 62.5878 10.7451V15.5733H64.567V10.3857C64.567 8.7295 63.4316 7.57324 61.836 7.57324C61.0535 7.57324 60.2863 7.87012 59.5959 8.43262V4.33887H57.632V15.5733ZM66.4225 11.667C66.4225 14.0576 68.0642 15.7608 70.381 15.7608C72.6978 15.7608 74.3242 14.0576 74.3242 11.667C74.3242 9.26075 72.6978 7.57324 70.381 7.57324C68.0642 7.57324 66.4225 9.26075 66.4225 11.667ZM68.4324 11.667C68.4324 10.2295 69.2303 9.24512 70.381 9.24512C71.5164 9.24512 72.3142 10.2295 72.3142 11.667C72.3142 13.1045 71.5164 14.0889 70.381 14.0889C69.2303 14.0889 68.4324 13.1045 68.4324 11.667ZM76.2559 15.5733H78.2198V10.1514C78.7261 9.6045 79.2938 9.32325 79.8615 9.32325C80.6593 9.32325 81.2117 9.917 81.2117 10.7451V15.5733H83.1909V10.3857C83.1909 8.7295 82.0555 7.57324 80.4599 7.57324C79.6774 7.57324 78.9102 7.87012 78.2198 8.43262V7.76074H76.2559V15.5733ZM85.0464 11.6045C85.0464 14.042 86.6728 15.7608 88.9896 15.7608C89.8488 15.7608 90.7233 15.5576 91.5979 15.1514V13.4795C90.8 13.9482 90.0175 14.2139 89.3118 14.2139C88.023 14.2139 87.1024 13.4014 86.9796 12.2139H92.1809C92.2116 11.9482 92.2116 11.6982 92.2116 11.4795C92.2116 9.18262 90.8461 7.57324 88.8361 7.57324C86.6421 7.57324 85.0464 9.24512 85.0464 11.6045ZM86.9796 10.917C87.0717 9.83887 87.8081 9.12012 88.7594 9.12012C89.634 9.12012 90.263 9.8545 90.3244 10.917H86.9796Z" fill="#F3F4F6"/>
+                      </g>
+                      <defs>
+                          <clipPath id="clip0_2081_3309">
+                              <rect width="94.6667" height="20" fill="white" transform="translate(0.166504)"/>
+                          </clipPath>
+                      </defs>
+                  </svg>
+              </a>
+          </p>
       </div>
-    </div>
-    <!-- Bottom Part -->
-    <div class="pt-8 mt-12 text-center border-t-2 border-primary-darker">
-      <p
-        class="inline-flex items-center text-base text-gray-100 xl:text-center"
-      >
-        Built with ♥ from
-        <a
-          href="https://www.prophone.com"
-          class="inline-block p-1 -m-1 ml-0.5 rounded focus:outline-none focus:ring-2 ring-white ring-opacity-75"
-        >
-          <span class="sr-only">ProPhone</span>
-          <svg
-            aria-hidden="true"
-            width="95"
-            height="20"
-            viewBox="0 0 95 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_2081_3309)">
-              <path
-                d="M0.166504 4.11491C0.166504 3.88479 0.349686 3.69824 0.575652 3.69824H8.41749C8.70492 3.69824 8.90279 3.99213 8.79912 4.26515L2.9271 19.7339C2.86615 19.8944 2.71452 20.0003 2.54548 20.0003H0.575652C0.349686 20.0003 0.166504 19.8138 0.166504 19.5837V4.11491Z"
-                fill="#F3F4F6"
-              />
-              <path
-                d="M15.5607 15.8854C15.5607 16.1155 15.3775 16.3021 15.1515 16.3021H7.3097C7.02227 16.3021 6.8244 16.0082 6.92806 15.7352L12.8001 0.266426C12.861 0.105862 13.0127 0 13.1817 0H15.1515C15.3775 0 15.5607 0.186548 15.5607 0.416667V15.8854Z"
-                fill="#F3F4F6"
-              />
-              <path
-                d="M23.2834 15.5732H25.2474V11.7139H27.0118C29.1598 11.7139 30.6941 10.3076 30.6941 8.27637C30.6941 6.24512 29.1598 4.82324 27.0118 4.82324H23.2834V15.5732ZM25.2474 6.44824H26.7356C27.871 6.44824 28.6689 7.18262 28.6689 8.27637C28.6689 9.35449 27.871 10.0889 26.7356 10.0889H25.2474V6.44824ZM32.6332 15.5732H34.5971V10.3545C35.1034 9.69824 35.7938 9.33887 36.4382 9.33887C36.6684 9.33887 36.9139 9.37012 37.1287 9.43262V7.65137C36.9139 7.58887 36.6991 7.57324 36.4843 7.57324C35.8245 7.57324 35.1494 7.91699 34.5971 8.54199V7.76074H32.6332V15.5732ZM38.142 11.667C38.142 14.0576 39.7837 15.7607 42.1005 15.7607C44.4173 15.7607 46.0437 14.0576 46.0437 11.667C46.0437 9.26074 44.4173 7.57324 42.1005 7.57324C39.7837 7.57324 38.142 9.26074 38.142 11.667ZM40.152 11.667C40.152 10.2295 40.9498 9.24512 42.1005 9.24512C43.2359 9.24512 44.0338 10.2295 44.0338 11.667C44.0338 13.1045 43.2359 14.0889 42.1005 14.0889C40.9498 14.0889 40.152 13.1045 40.152 11.667Z"
-                fill="#F3F4F6"
-              />
-              <path
-                d="M48.2825 15.5733H50.2464V11.7139H52.0108C54.1588 11.7139 55.6931 10.3076 55.6931 8.27637C55.6931 6.24512 54.1588 4.82324 52.0108 4.82324H48.2825V15.5733ZM50.2464 6.44824H51.7346C52.87 6.44824 53.6678 7.18262 53.6678 8.27637C53.6678 9.3545 52.87 10.0889 51.7346 10.0889H50.2464V6.44824ZM57.632 15.5733H59.5959V10.1514C60.1022 9.6045 60.6699 9.32325 61.2376 9.32325C62.0354 9.32325 62.5878 9.917 62.5878 10.7451V15.5733H64.567V10.3857C64.567 8.7295 63.4316 7.57324 61.836 7.57324C61.0535 7.57324 60.2863 7.87012 59.5959 8.43262V4.33887H57.632V15.5733ZM66.4225 11.667C66.4225 14.0576 68.0642 15.7608 70.381 15.7608C72.6978 15.7608 74.3242 14.0576 74.3242 11.667C74.3242 9.26075 72.6978 7.57324 70.381 7.57324C68.0642 7.57324 66.4225 9.26075 66.4225 11.667ZM68.4324 11.667C68.4324 10.2295 69.2303 9.24512 70.381 9.24512C71.5164 9.24512 72.3142 10.2295 72.3142 11.667C72.3142 13.1045 71.5164 14.0889 70.381 14.0889C69.2303 14.0889 68.4324 13.1045 68.4324 11.667ZM76.2559 15.5733H78.2198V10.1514C78.7261 9.6045 79.2938 9.32325 79.8615 9.32325C80.6593 9.32325 81.2117 9.917 81.2117 10.7451V15.5733H83.1909V10.3857C83.1909 8.7295 82.0555 7.57324 80.4599 7.57324C79.6774 7.57324 78.9102 7.87012 78.2198 8.43262V7.76074H76.2559V15.5733ZM85.0464 11.6045C85.0464 14.042 86.6728 15.7608 88.9896 15.7608C89.8488 15.7608 90.7233 15.5576 91.5979 15.1514V13.4795C90.8 13.9482 90.0175 14.2139 89.3118 14.2139C88.023 14.2139 87.1024 13.4014 86.9796 12.2139H92.1809C92.2116 11.9482 92.2116 11.6982 92.2116 11.4795C92.2116 9.18262 90.8461 7.57324 88.8361 7.57324C86.6421 7.57324 85.0464 9.24512 85.0464 11.6045ZM86.9796 10.917C87.0717 9.83887 87.8081 9.12012 88.7594 9.12012C89.634 9.12012 90.263 9.8545 90.3244 10.917H86.9796Z"
-                fill="#F3F4F6"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_2081_3309">
-                <rect
-                  width="94.6667"
-                  height="20"
-                  fill="white"
-                  transform="translate(0.166504)"
-                />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-      </p>
-    </div>
   </div>
 </footer>
 
@@ -3392,52 +3336,52 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-141353"
-                                            name="141353"
+                                            id="contact-service-154001"
+                                            name="154001"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-141353" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
+                                        <label for="contact-label-service-154001" class="ml-3 text-sm font-medium text-gray-700">Kitchen and Cabinet Refinishing</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-141354"
-                                            name="141354"
+                                            id="contact-service-154002"
+                                            name="154002"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-141354" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
+                                        <label for="contact-label-service-154002" class="ml-3 text-sm font-medium text-gray-700">Interior Painting</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-141355"
-                                            name="141355"
+                                            id="contact-service-154003"
+                                            name="154003"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-141355" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
+                                        <label for="contact-label-service-154003" class="ml-3 text-sm font-medium text-gray-700">Exterior Painting</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-141356"
-                                            name="141356"
+                                            id="contact-service-154004"
+                                            name="154004"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-141356" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
+                                        <label for="contact-label-service-154004" class="ml-3 text-sm font-medium text-gray-700">Drywall and Plastering</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-141357"
-                                            name="141357"
+                                            id="contact-service-154005"
+                                            name="154005"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-141357" class="ml-3 text-sm font-medium text-gray-700">Other Services</label>
+                                        <label for="contact-label-service-154005" class="ml-3 text-sm font-medium text-gray-700">Other Services</label>
                                     </div>
                                 
                             </div>
@@ -3599,7 +3543,7 @@
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a href="https://facebook.com/harrellspainting/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/harrellspainting/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
